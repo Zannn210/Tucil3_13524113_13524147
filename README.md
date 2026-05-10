@@ -189,8 +189,8 @@ f(n) = g(n) + h(n)
 
 | Kode | Nama | Formula | Admissible |
 |------|------|---------|------------|
-| H1 | Manhattan | `|delta_row| + |delta_col|` | Ya |
-| H2 | Chebyshev | `max(|delta_row|, |delta_col|)` | Ya |
+| H1 | Manhattan | `abs(delta_row) + abs(delta_col)` | Ya |
+| H2 | Chebyshev | `max(abs(delta_row), abs(delta_col))` | Ya |
 | H3 | Euclidean | `sqrt(delta_row^2 + delta_col^2)` | Ya |
 
 Semua heuristik bersifat admissible karena tidak pernah melebih-lebihkan
